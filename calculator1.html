@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Background</title>
+    <body style="background-color:rgba(0, 0, 0, 0.733)"></body>
+    <head>    
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="styles.css" />
+        <center> </center>
+        <style>
+            #clear{
+                width: 250px;
+                color: #FFF;
+	text-shadow: -1px -1px 0px #44006F;
+	background-color: #D20000;
+	border-top: 2px solid  #000000;
+	border-right: 2px solid #000000;
+	border-bottom: 2px solid #800000;
+	border-left: 2px solid #800000;
+	box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #B00000;
+            }
+        .formstyle{
+            width: 280px;
+            height: 615px;
+            margin: auto;
+            border: 2px solid black;
+            padding: 0 10px;
+	border-radius: 4px;
+	border-top: 2px solid #000000;
+	border-right: 2px solid #000000;
+	border-bottom: 2px solid rgb(0, 0, 0);
+	border-left: 2px solid rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.664);
+	box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px rgba(150, 150, 150, .2);
+	font-size: 28px;
+	color: #666;
+	text-align: right;
+	font-weight: 400;
+        }
+
+        input{
+            width: 54px;
+            display: inline-block;
+	margin: 3px;
+	width: 74px;
+	height: 42px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 4px; 
+    background-color:rgba(128, 128, 128, 0.815);       
+    color: #FFF;
+	text-shadow: -1px -1px 0px #44006F;
+	background-color: #44006F;
+	border-top: 2px solid #000000;
+	border-right: 2px solid #000000;
+	border-bottom: 2px solid #44006F;
+	border-left: 2px solid #44006F;
+	box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #681999;;   
+                    
+                    }
+
+        #block{
+            width: 250px;
+            background-color: rgba(114, 114, 114, 0.342)
+            
+	
+        }
+       
+
+        </style>
+    
+    
+    
+    </head>
+    <body>
+        <div class="formstyle">
+            <form name="forms">
+                <input type="text" name="answer" id="block"> <br> </br>
+                <input type= "button" value= " 1 " onclick="forms.answer.value += '1'">
+                <input type= "button" value= " 2 " onclick="forms.answer.value += '2' ">
+                <input type= "button" value= " 3 " onclick="forms.answer.value += '3' ">
+                
+                <br> </br>
+                
+                <input type="button" value=" 4 " onclick="forms.answer.value += '4' ">
+                <input type="button" value=" 5 " onclick="forms.answer.value += '5' ">
+                <input type="button" value=" 6 " onclick="forms.answer.value += '6' ">
+                
+                <br> </br>
+                
+                <input type="button" value=" 7 " onclick="forms.answer.value += '7' ">
+                <input type="button" value=" 8 " onclick="forms.answer.value += '8' ">
+                <input type="button" value=" 9 " onclick="forms.answer.value += '9' ">
+                
+                <br> </br>
+                
+                <input type="button" value=" + " onclick="forms.answer.value += '+' ">
+                <input type="button" value=" - " onclick="forms.answer.value += '-' ">
+                <input type="button" value=" * " onclick="forms.answer.value += '*' ">
+                
+                <br> </br>
+                
+                <input type="button" value=" / " onclick="forms.answer.value += '/' ">
+                <input type="button" value=" 0 " onclick="forms.answer.value += '0' ">
+                <input type="button" value=" = " onclick="forms.answer.value = eval(forms.answer.value)">
+                <br></br>
+                <input type="button" value=" Clear All " onclick="forms.answer.value = '' " id="clear">
+            
+            
+            </form>
+
+        </div>
+    </body>
+    </html>
